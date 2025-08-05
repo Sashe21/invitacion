@@ -1,0 +1,9 @@
+# netlify.toml
+
+[build]
+  base = "mi-invitacion-boda"     # Carpeta donde está tu proyecto Next.js y package.json
+  command = "npm run build"        # Comando para construir tu app Next.js
+  publish = ".next"                # Directorio a publicar para Next.js (por defecto, la carpeta .next)
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"  # Plugin oficial Next.js para Netlify
